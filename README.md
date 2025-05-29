@@ -1,15 +1,15 @@
-# Technical Assessment Framework
+# Engineering Director Assessment Framework
 
-Welcome to our Technical Assessment Framework! This repository contains a set of challenges designed to evaluate different aspects of software engineering skills. Each challenge focuses on a specific area of expertise, allowing candidates to demonstrate their technical knowledge, problem-solving approach, and coding practices.
+Welcome to our Engineering Director Assessment Framework! This repository contains a set of challenges designed to evaluate different aspects of technical leadership and strategic engineering competencies. Each challenge focuses on a specific area of expertise, allowing candidates to demonstrate their architectural vision, technical decision-making, team leadership capabilities, and strategic planning skills.
 
 ## Overview
 
 This assessment consists of four distinct challenges:
 
-1. **TypeScript Code Review** - Review and improve a Next.js application with intentional code issues
-2. **Python Algorithm Implementation** - Implement a specific algorithm within a provided API scaffold
-3. **Infrastructure Fix** - Troubleshoot and resolve issues in a CDK application with DynamoDB and Lambda
-4. **System Design** - Design the architecture for a mobile application based on provided requirements
+1. **Technical Strategy & Codebase Evaluation** - Evaluate a Next.js application through a director's lens, focusing on architectural patterns, technical debt strategy, and team scaling considerations
+2. **System Algorithm Strategy** - Develop a strategic approach to algorithm implementation within a system, considering scalability, maintainability, and cross-team coordination
+3. **Enterprise Infrastructure Architecture** - Design and document infrastructure strategies for a CDK application with DynamoDB and Lambda, focusing on resilience, security, and cost optimization
+4. **Enterprise System Architecture** - Create a comprehensive technical vision and roadmap for a mobile application ecosystem based on business requirements
 
 ## How to Proceed
 
@@ -17,15 +17,15 @@ This assessment consists of four distinct challenges:
 2. Create a separate branch for each challenge you attempt
 3. Complete the challenges according to the instructions below
 4. Create a pull request for each challenge when ready to submit
-5. Ensure your code follows best practices and includes appropriate documentation
+5. Ensure your solutions demonstrate strategic thinking, architectural vision, and include comprehensive documentation with rationales for your decisions
 
 ## Challenges
 
-### 1. TypeScript Code Review Challenge
+### 1. Technical Strategy & Codebase Evaluation
 
 **Location:** `/typescript-review`
 
-**Objective:** Review a Next.js application that contains several intentional code issues, anti-patterns, and performance problems. Identify and fix these issues while maintaining the application's functionality.
+**Objective:** Evaluate a Next.js application from an architectural perspective, identifying systemic issues, developing a technical debt strategy, and establishing coding standards that would scale across engineering teams.
 
 **Setup:**
 ```bash
@@ -35,22 +35,24 @@ npm run dev
 ```
 
 **Requirements:**
-- Identify and fix at least 5 code issues (performance issues, anti-patterns, etc.)
-- Improve type safety throughout the application
-- Document each issue and your solution in the PR description
-- Ensure all functionality continues to work as expected
+- Identify architectural and systemic issues that would impact scalability and team productivity
+- Develop a technical debt prioritization strategy with implementation timelines
+- Create coding standards and architectural guidelines for the team
+- Outline a refactoring roadmap with milestones and resource allocation
+- Document your strategic approach, including rationales for prioritization decisions
 
 **Evaluation Criteria:**
-- Thoroughness of code review
-- Quality of solutions implemented
-- Code clarity and maintainability
-- TypeScript best practices
+- Strategic vision and architectural thinking
+- Ability to balance technical debt against business priorities
+- Technical leadership in establishing standards and best practices
+- Effectiveness of proposed implementation and rollout strategy
+- Forward-thinking approaches to code maintainability and team scalability
 
-### 2. Python Algorithm Implementation
+### 2. System Algorithm Strategy
 
 **Location:** `/python-algorithm`
 
-**Objective:** Implement a specific algorithm within a provided API scaffold to solve the stated problem.
+**Objective:** Develop a strategic approach to implementing an algorithm at scale, considering system-wide implications, team capabilities, and long-term maintainability.
 
 **Setup:**
 ```bash
@@ -62,24 +64,24 @@ python app.py
 ```
 
 **Requirements:**
-- Implement the algorithm described in the challenge details
-- Ensure your solution handles all edge cases
-- Optimize for both time and space complexity
-- Write comprehensive tests for your implementation
-- Document your approach and any trade-offs made
+- Create a strategic implementation plan for the algorithm across multiple services
+- Develop scaling considerations for handling growing data volumes and traffic patterns
+- Design a testing strategy that encompasses unit, integration, and system-level validation
+- Outline monitoring and observability requirements for production deployment
+- Document architectural decisions, trade-offs, and risk mitigation strategies
 
 **Evaluation Criteria:**
-- Correctness of implementation
-- Algorithm efficiency
-- Code organization and readability
-- Test coverage
-- Documentation quality
+- System-level architectural thinking
+- Strategic approach to algorithm scaling and optimization
+- Cross-functional considerations (DevOps, SRE, Data Science)
+- Risk identification and mitigation planning
+- Alignment of technical solutions with business objectives
 
-### 3. Infrastructure Fix Challenge
+### 3. Enterprise Infrastructure Architecture
 
 **Location:** `/infrastructure-fix`
 
-**Objective:** Troubleshoot and fix issues in a CDK application that has misconfigured DynamoDB-Lambda connections and permission problems.
+**Objective:** Design and document a comprehensive infrastructure strategy for a CDK application with DynamoDB and Lambda, focusing on enterprise-grade reliability, security, and operational excellence.
 
 **Setup:**
 ```bash
@@ -90,72 +92,73 @@ pip install -r requirements.txt
 ```
 
 **Requirements:**
-- Identify and fix all infrastructure configuration issues
-- Ensure proper permissions between Lambda and DynamoDB
-- Address any security concerns
-- Document all issues found and fixes applied
-- Make the infrastructure deployable without errors
+- Develop a multi-environment infrastructure strategy (dev, staging, production)
+- Create a security and compliance framework for cloud resources
+- Design a disaster recovery and business continuity plan
+- Establish cost optimization strategies without compromising performance
+- Document infrastructure-as-code best practices for the engineering organization
 
 **Evaluation Criteria:**
-- Ability to identify infrastructure issues
-- Quality of solutions implemented
-- Security best practices
-- AWS/CDK knowledge
-- Documentation of changes
+- Strategic cloud architecture vision
+- Security and compliance considerations at enterprise scale
+- Operational excellence and reliability planning
+- Cost optimization and resource efficiency strategies
+- Technical governance and best practices implementation
 
-### 4. System Design Challenge
+### 4. Enterprise System Architecture
 
 **Location:** `/system-design`
 
-**Objective:** Design a scalable, maintainable architecture for a mobile application based on the provided requirements.
+**Objective:** Create a comprehensive technical vision and roadmap for a mobile application ecosystem, including integration strategies, organizational alignment, and technology adoption plans.
 
 **Requirements:**
-- Review the requirements document in the system-design folder
-- Create architecture diagrams showing the system components
-- Document API designs, data models, and technology choices
-- Address scaling, security, and performance considerations
-- Explain your design decisions and any trade-offs made
+- Develop a multi-year technical vision and roadmap based on business requirements
+- Design integration architecture for existing enterprise systems
+- Create team structure and ownership models for the proposed architecture
+- Establish technology selection frameworks and governance processes
+- Document risk management strategies and contingency plans
 
 **Evaluation Criteria:**
-- Architecture clarity and completeness
-- Scalability considerations
-- Security best practices
-- Quality of documentation
-- Justification of technical decisions
+- Enterprise architectural vision and strategic thinking
+- Alignment of technical strategy with business objectives
+- Team structure and organizational design considerations
+- Technology governance and decision-making frameworks
+- Risk assessment and mitigation planning at enterprise scale
 
 ## Submission Guidelines
 
 For each challenge:
 
-1. Create a separate branch named `solution/[challenge-name]` (e.g., `solution/typescript-review`)
+1. Create a separate branch named `director-solution/[challenge-name]` (e.g., `director-solution/technical-strategy`)
 2. Make your changes and commit them with clear, descriptive commit messages
 3. Create a pull request against the main branch
 4. In the PR description, include:
-   - A summary of your changes
-   - Any assumptions you made
-   - Challenges you encountered and how you solved them
-   - Instructions for running/testing your solution (if applicable)
+   - An executive summary of your strategic approach
+   - Key architectural decisions and their rationales
+   - Resource requirements and implementation timelines
+   - Risk assessment and mitigation strategies
+   - Success metrics and evaluation frameworks
 
 ## Time Expectations
 
-While there is no strict time limit, we recommend spending:
-- 1-2 hours on the TypeScript challenge
-- 1-2 hours on the Python algorithm
-- 1-2 hours on the infrastructure fix
-- 1-2 hours on the system design
+While there is no strict time limit, these director-level challenges require deeper strategic thinking and comprehensive planning. We recommend spending:
+- 2-4 hours on the Technical Strategy & Codebase Evaluation
+- 2-4 hours on the System Algorithm Strategy
+- 2-4 hours on the Enterprise Infrastructure Architecture
+- 3-5 hours on the Enterprise System Architecture
 
-You are not required to complete all challenges. Choose the ones that best showcase your skills or complete as many as you wish.
+You are not required to complete all challenges. Choose the ones that best showcase your strategic thinking and technical leadership capabilities or complete as many as you wish.
 
 ## Evaluation Process
 
-Each challenge will be evaluated by our engineering team based on the criteria listed above. We value:
-- Clean, maintainable code
-- Clear documentation
-- Thoughtful problem-solving
-- Attention to detail
-- Best practices appropriate to each technology
+Each challenge will be evaluated by our senior leadership team based on the criteria listed above. We value:
+- Strategic technical vision and architectural thinking
+- Ability to balance technical excellence with business objectives
+- Comprehensive planning and resource allocation approaches
+- Risk identification and mitigation strategies
+- Cross-functional leadership and organizational considerations
 
-We're more interested in your approach and thought process than in perfect solutions. Don't hesitate to document assumptions or alternative approaches you considered.
+We're more interested in your strategic approach and leadership thinking than in perfect technical solutions. Don't hesitate to document assumptions, alternative approaches you considered, and how you would guide teams through implementation challenges.
 
 ## Questions
 

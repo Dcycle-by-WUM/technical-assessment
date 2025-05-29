@@ -1,0 +1,42 @@
+{
+  "app": "python app.py",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "requirements*.txt",
+      "source.bat",
+      "**/__init__.py",
+      "**/__pycache__/**",
+      "tests/**",
+      "*.py.bak",
+      "*.egg-info/**",
+      ".venv/**",
+      ".git/**"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
+    "@aws-cdk/core:stackRelativeExports": true,
+    "@aws-cdk/aws-lambda:recognizeVersionProps": true,
+    "@aws-cdk/aws-cloudfront-origins:recognizeSecurityHeaderProps": true,
+    "dev": {
+      "alertEmail": "dev-alerts@example.com",
+      "logRetention": 7
+    },
+    "staging": {
+      "alertEmail": "staging-alerts@example.com",
+      "logRetention": 14
+    },
+    "prod": {
+      "alertEmail": "prod-alerts@example.com",
+      "logRetention": 30
+    }
+  }
+}
+
